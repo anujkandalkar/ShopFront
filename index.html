@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopFront!!!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">ShopFront</h1>
+      <div class="search-wrap">
+        <input id="searchInput" placeholder="Search products, e.g. headphones" />
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+        </select>
+        <select id="sortSelect" title="Sort">
+          <option value="default">Sort</option>
+          <option value="price-asc">Price — low to high</option>
+          <option value="price-desc">Price — high to low</option>
+          <option value="name-asc">Name A → Z</option>
+        </select>
+      </div>
+      <div class="header-actions">
+        <button id="favoritesBtn" class="icon-btn" title="Wishlist">❤️ <span id="favCount">0</span></button>
+        <button id="cartBtn" class="icon-btn" title="Cart">🛒 <span id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="products-section">
+      <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="cart-panel" id="cartPanel">
+        <h3>Your Cart</h3>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-summary">
+          <div>Subtotal: <strong id="cartSubtotal">₹0</strong></div>
+          <button id="checkoutBtn" class="btn primary">Checkout</button>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h4>Filters & Tips</h4>
+        <p>Use search and filters. Cart and wishlist are saved to your browser.</p>
+      </div>
+    </aside>
+  </main>
+
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="modalClose">✖</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="checkoutModal" class="modal" aria-hidden="true">
+    <div class="modal-content narrow">
+      <button class="close" id="checkoutClose">✖</button>
+      <div class="modal-body">
+        <h2>Checkout</h2>
+        <form id="checkoutForm" novalidate>
+          <label>
+            Full name
+            <input name="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            Address
+            <input name="address" required />
+          </label>
+          <label>
+            Payment method
+            <select name="payment" required>
+              <option value="card">Card</option>
+              <option value="upi">UPI</option>
+              <option value="cod">Cash on Delivery</option>
+            </select>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Place order</button>
+          </div>
+        </form>
+        <div id="orderResult" class="order-result" hidden></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 ShopFront! All rights reserved!</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
