@@ -1,5 +1,5 @@
 const PRODUCTS = [
-  {"id":"p1","name":"Smartphone XL","price":26999,"category":"Phones","rating":4.5,"img":"https://imgs.search.brave.com/3_No6aVJIkI0YaL27tXDLpu5i3uBycx_wLYC1aV5cLA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zczcu/dnp3LmNvbS9pcy9p/bWFnZS9WZXJpem9u/V2lyZWxlc3MvZ29v/Z2xlLWttNC1vYnNp/ZGlhbj9oZWk9MjUw/JmJnYz1mNmY2ZjYm/Zm10PXdlYnA","description":"Large display smartphone with excellent camera."},
+  {"id":"p1","name":"Smartphone XL","price":25999,"category":"Phones","rating":4.5,"img":"https://imgs.search.brave.com/3_No6aVJIkI0YaL27tXDLpu5i3uBycx_wLYC1aV5cLA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zczcu/dnp3LmNvbS9pcy9p/bWFnZS9WZXJpem9u/V2lyZWxlc3MvZ29v/Z2xlLWttNC1vYnNp/ZGlhbj9oZWk9MjUw/JmJnYz1mNmY2ZjYm/Zm10PXdlYnA","description":"Large display smartphone with excellent camera."},
   {"id":"p2","name":"Smartphone Mini","price":17999,"category":"Phones","rating":4.2,"img":"https://imgs.search.brave.com/RDW3nBIk3wGWucrIJECBdxsfA3xhfgKq8KOWlyMAU-4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9waXNj/ZXMuYmJ5c3RhdGlj/LmNvbS9pbWFnZTIv/QmVzdEJ1eV9VUy9k/YW0vUkVGLTI2NTgz/NTAtZXhwbG9yZS10/eXBlLWlwaG9uZTJf/REVSLTgxMzljNjc4/LTg0YTQtNDFiYi1i/NTJjLWZlYjgyMWEx/MDgxNi5qcGc7bWF4/SGVpZ2h0PTQzMjtt/YXhXaWR0aD00MzI_/Zm9ybWF0PXdlYnA","description":"Compact smartphone, pocket friendly and fast."},
   {"id":"p3","name":"Laptop Pro 15","price":74999,"category":"Laptops","rating":4.7,"img":"https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","description":"High performance laptop for professionals."},
   {"id":"p4","name":"Laptop Air 13","price":55999,"category":"Laptops","rating":4.4,"img":"https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","description":"Lightweight laptop with long battery."},
@@ -337,4 +337,5 @@ function init() {
 }
 
 init();
+
 
